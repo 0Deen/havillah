@@ -1,0 +1,758 @@
+{
+  "source_projects": {
+    "ajira": {
+      "namespaced_components_lib_data": {
+        "data": 5,
+        "lib": 22,
+        "components": 27
+      }
+    },
+    "mkconnections": {
+      "namespaced_components_lib_data": {
+        "components": 43,
+        "data": 2,
+        "lib": 11
+      }
+    },
+    "nicks": {
+      "namespaced_components_lib_data": {
+        "components": 21,
+        "lib": 14
+      }
+    }
+  },
+  "integrated_routes": [
+    {
+      "project": "ajira",
+      "route": "/apply",
+      "decision": "merged/skipped duplicate; Havillah route retained",
+      "reason": "conflicts with /apply"
+    },
+    {
+      "project": "ajira",
+      "route": "/private-employment-agency-kenya",
+      "decision": "integrated as native Havillah route",
+      "reason": "unique route; imported page and colocated files copied into app/"
+    },
+    {
+      "project": "ajira",
+      "route": "/recruitment-safety",
+      "decision": "integrated as native Havillah route",
+      "reason": "unique route; imported page and colocated files copied into app/"
+    },
+    {
+      "project": "ajira",
+      "route": "/jobs/[slug]",
+      "decision": "merged/skipped duplicate; Havillah route retained",
+      "reason": "conflicts with /jobs/[slug]"
+    },
+    {
+      "project": "ajira",
+      "route": "/jobs",
+      "decision": "source page skipped; source job data merged into the unified Havillah catalogue",
+      "reason": "duplicate route implementations deduplicated; unique listings from all sources are adapted in data/combined-jobs.ts"
+    },
+    {
+      "project": "ajira",
+      "route": "/bahrain-jobs",
+      "decision": "integrated as native Havillah route",
+      "reason": "unique route; imported page and colocated files copied into app/"
+    },
+    {
+      "project": "ajira",
+      "route": "/oman-jobs",
+      "decision": "integrated as native Havillah route",
+      "reason": "unique route; imported page and colocated files copied into app/"
+    },
+    {
+      "project": "ajira",
+      "route": "/faq",
+      "decision": "merged/skipped duplicate; Havillah route retained",
+      "reason": "conflicts with /faq"
+    },
+    {
+      "project": "ajira",
+      "route": "/resources/[slug]",
+      "decision": "integrated as native Havillah route",
+      "reason": "unique route; imported page and colocated files copied into app/"
+    },
+    {
+      "project": "ajira",
+      "route": "/resources",
+      "decision": "merged/skipped duplicate; Havillah route retained",
+      "reason": "conflicts with /resources"
+    },
+    {
+      "project": "ajira",
+      "route": "/recruitment-agencies-kenya",
+      "decision": "integrated as native Havillah route",
+      "reason": "unique route; imported page and colocated files copied into app/"
+    },
+    {
+      "project": "ajira",
+      "route": "/api/apply",
+      "decision": "integrated as native Havillah route",
+      "reason": "unique route; imported page and colocated files copied into app/"
+    },
+    {
+      "project": "ajira",
+      "route": "/api/leads",
+      "decision": "integrated as native Havillah route",
+      "reason": "unique route; imported page and colocated files copied into app/"
+    },
+    {
+      "project": "ajira",
+      "route": "/api/employers",
+      "decision": "integrated as native Havillah route",
+      "reason": "unique route; imported page and colocated files copied into app/"
+    },
+    {
+      "project": "ajira",
+      "route": "/api/chat",
+      "decision": "integrated as native Havillah route",
+      "reason": "unique route; imported page and colocated files copied into app/"
+    },
+    {
+      "project": "ajira",
+      "route": "/kuwait-jobs",
+      "decision": "integrated as native Havillah route",
+      "reason": "unique route; imported page and colocated files copied into app/"
+    },
+    {
+      "project": "ajira",
+      "route": "/qatar-jobs",
+      "decision": "integrated as native Havillah route",
+      "reason": "unique route; imported page and colocated files copied into app/"
+    },
+    {
+      "project": "ajira",
+      "route": "/privacy-policy",
+      "decision": "merged/skipped duplicate; Havillah route retained",
+      "reason": "conflicts with /privacy-policy"
+    },
+    {
+      "project": "ajira",
+      "route": "/destinations/[slug]",
+      "decision": "integrated as native Havillah route",
+      "reason": "unique route; imported page and colocated files copied into app/"
+    },
+    {
+      "project": "ajira",
+      "route": "/destinations",
+      "decision": "merged/skipped duplicate; Havillah route retained",
+      "reason": "conflicts with /destinations"
+    },
+    {
+      "project": "ajira",
+      "route": "/ajira-kazi-kenya",
+      "decision": "integrated as native Havillah route",
+      "reason": "unique route; imported page and colocated files copied into app/"
+    },
+    {
+      "project": "ajira",
+      "route": "/uae-jobs",
+      "decision": "integrated as native Havillah route",
+      "reason": "unique route; imported page and colocated files copied into app/"
+    },
+    {
+      "project": "ajira",
+      "route": "/terms",
+      "decision": "merged/skipped duplicate; Havillah route retained",
+      "reason": "conflicts with /terms"
+    },
+    {
+      "project": "ajira",
+      "route": "/gulf-recruitment-agency",
+      "decision": "integrated as native Havillah route",
+      "reason": "unique route; imported page and colocated files copied into app/"
+    },
+    {
+      "project": "ajira",
+      "route": "/assistant",
+      "decision": "integrated as native Havillah route",
+      "reason": "unique route; imported page and colocated files copied into app/"
+    },
+    {
+      "project": "ajira",
+      "route": "/overseas-recruitment-agency-kenya",
+      "decision": "integrated as native Havillah route",
+      "reason": "unique route; imported page and colocated files copied into app/"
+    },
+    {
+      "project": "ajira",
+      "route": "/job-categories/[slug]",
+      "decision": "merged/skipped duplicate; Havillah route retained",
+      "reason": "conflicts with /job-categories/[slug]"
+    },
+    {
+      "project": "ajira",
+      "route": "/how-it-works",
+      "decision": "merged/skipped duplicate; Havillah route retained",
+      "reason": "conflicts with /how-it-works"
+    },
+    {
+      "project": "ajira",
+      "route": "/about",
+      "decision": "merged/skipped duplicate; Havillah route retained",
+      "reason": "conflicts with /about"
+    },
+    {
+      "project": "ajira",
+      "route": "/saudi-arabia-jobs",
+      "decision": "integrated as native Havillah route",
+      "reason": "unique route; imported page and colocated files copied into app/"
+    },
+    {
+      "project": "ajira",
+      "route": "/overseas-jobs",
+      "decision": "integrated as native Havillah route",
+      "reason": "unique route; imported page and colocated files copied into app/"
+    },
+    {
+      "project": "ajira",
+      "route": "/jobs-for-kenyans-abroad",
+      "decision": "integrated as native Havillah route",
+      "reason": "unique route; imported page and colocated files copied into app/"
+    },
+    {
+      "project": "ajira",
+      "route": "/jobs-in-kenya",
+      "decision": "integrated as native Havillah route",
+      "reason": "unique route; imported page and colocated files copied into app/"
+    },
+    {
+      "project": "ajira",
+      "route": "/for-employers",
+      "decision": "integrated as native Havillah route",
+      "reason": "unique route; imported page and colocated files copied into app/"
+    },
+    {
+      "project": "ajira",
+      "route": "/recruitment-agency-kenya",
+      "decision": "integrated as native Havillah route",
+      "reason": "unique route; imported page and colocated files copied into app/"
+    },
+    {
+      "project": "ajira",
+      "route": "/gulf-jobs",
+      "decision": "integrated as native Havillah route",
+      "reason": "unique route; imported page and colocated files copied into app/"
+    },
+    {
+      "project": "ajira",
+      "route": "/contact",
+      "decision": "merged/skipped duplicate; Havillah route retained",
+      "reason": "conflicts with /contact"
+    },
+    {
+      "project": "mkconnections",
+      "route": "/jobs/[slug]",
+      "decision": "merged/skipped duplicate; Havillah route retained",
+      "reason": "conflicts with /jobs/[slug]"
+    },
+    {
+      "project": "mkconnections",
+      "route": "/jobs",
+      "decision": "source page skipped; source job data merged into the unified Havillah catalogue",
+      "reason": "duplicate route implementations deduplicated; unique listings from all sources are adapted in data/combined-jobs.ts"
+    },
+    {
+      "project": "mkconnections",
+      "route": "/jobs/country/[country]",
+      "decision": "integrated as native Havillah route",
+      "reason": "unique route; imported page and colocated files copied into app/"
+    },
+    {
+      "project": "mkconnections",
+      "route": "/success-stories",
+      "decision": "integrated as native Havillah route",
+      "reason": "unique route; imported page and colocated files copied into app/"
+    },
+    {
+      "project": "mkconnections",
+      "route": "/responsibilities",
+      "decision": "integrated as native Havillah route",
+      "reason": "unique route; imported page and colocated files copied into app/"
+    },
+    {
+      "project": "mkconnections",
+      "route": "/api/chat",
+      "decision": "merged/skipped duplicate; Havillah route retained",
+      "reason": "conflicts with /api/chat"
+    },
+    {
+      "project": "mkconnections",
+      "route": "/api/leads",
+      "decision": "merged/skipped duplicate; Havillah route retained",
+      "reason": "conflicts with /api/leads"
+    },
+    {
+      "project": "mkconnections",
+      "route": "/api/contact",
+      "decision": "integrated as native Havillah route",
+      "reason": "unique route; imported page and colocated files copied into app/"
+    },
+    {
+      "project": "mkconnections",
+      "route": "/api/reports",
+      "decision": "integrated as native Havillah route",
+      "reason": "unique route; imported page and colocated files copied into app/"
+    },
+    {
+      "project": "mkconnections",
+      "route": "/api/alerts",
+      "decision": "integrated as native Havillah route",
+      "reason": "unique route; imported page and colocated files copied into app/"
+    },
+    {
+      "project": "mkconnections",
+      "route": "/api/newsletter",
+      "decision": "integrated as native Havillah route",
+      "reason": "unique route; imported page and colocated files copied into app/"
+    },
+    {
+      "project": "mkconnections",
+      "route": "/api/applications",
+      "decision": "integrated as native Havillah route",
+      "reason": "unique route; imported page and colocated files copied into app/"
+    },
+    {
+      "project": "mkconnections",
+      "route": "/apply",
+      "decision": "merged/skipped duplicate; Havillah route retained",
+      "reason": "conflicts with /apply"
+    },
+    {
+      "project": "mkconnections",
+      "route": "/safety",
+      "decision": "merged/skipped duplicate; Havillah route retained",
+      "reason": "conflicts with /safety"
+    },
+    {
+      "project": "mkconnections",
+      "route": "/cookie-policy",
+      "decision": "integrated as native Havillah route",
+      "reason": "unique route; imported page and colocated files copied into app/"
+    },
+    {
+      "project": "mkconnections",
+      "route": "/careers",
+      "decision": "integrated as native Havillah route",
+      "reason": "unique route; imported page and colocated files copied into app/"
+    },
+    {
+      "project": "mkconnections",
+      "route": "/gallery",
+      "decision": "merged into unified Havillah image gallery",
+      "reason": "custom /gallery uses all de-duplicated source images and excludes source-company logo/letterhead assets"
+    },
+    {
+      "project": "mkconnections",
+      "route": "/for-employers",
+      "decision": "merged/skipped duplicate; Havillah route retained",
+      "reason": "conflicts with /for-employers"
+    },
+    {
+      "project": "mkconnections",
+      "route": "/contact",
+      "decision": "merged/skipped duplicate; Havillah route retained",
+      "reason": "conflicts with /contact"
+    },
+    {
+      "project": "mkconnections",
+      "route": "/terms",
+      "decision": "merged/skipped duplicate; Havillah route retained",
+      "reason": "conflicts with /terms"
+    },
+    {
+      "project": "mkconnections",
+      "route": "/destinations",
+      "decision": "merged/skipped duplicate; Havillah route retained",
+      "reason": "conflicts with /destinations"
+    },
+    {
+      "project": "mkconnections",
+      "route": "/destinations/[country]",
+      "decision": "merged/skipped duplicate; Havillah route retained",
+      "reason": "conflicts with /destinations/[slug]"
+    },
+    {
+      "project": "mkconnections",
+      "route": "/resources",
+      "decision": "merged/skipped duplicate; Havillah route retained",
+      "reason": "conflicts with /resources"
+    },
+    {
+      "project": "mkconnections",
+      "route": "/recruitment-terms",
+      "decision": "integrated as native Havillah route",
+      "reason": "unique route; imported page and colocated files copied into app/"
+    },
+    {
+      "project": "mkconnections",
+      "route": "/privacy",
+      "decision": "integrated as native Havillah route",
+      "reason": "unique route; imported page and colocated files copied into app/"
+    },
+    {
+      "project": "mkconnections",
+      "route": "/how-it-works",
+      "decision": "merged/skipped duplicate; Havillah route retained",
+      "reason": "conflicts with /how-it-works"
+    },
+    {
+      "project": "mkconnections",
+      "route": "/about",
+      "decision": "merged/skipped duplicate; Havillah route retained",
+      "reason": "conflicts with /about"
+    },
+    {
+      "project": "mkconnections",
+      "route": "/faqs",
+      "decision": "integrated as native Havillah route",
+      "reason": "unique route; imported page and colocated files copied into app/"
+    },
+    {
+      "project": "nicks",
+      "route": "/employers/[slug]",
+      "decision": "integrated as native Havillah route",
+      "reason": "unique route; imported page and colocated files copied into app/"
+    },
+    {
+      "project": "nicks",
+      "route": "/employers",
+      "decision": "merged/skipped duplicate; Havillah route retained",
+      "reason": "conflicts with /employers"
+    },
+    {
+      "project": "nicks",
+      "route": "/career-guidance",
+      "decision": "integrated as native Havillah route",
+      "reason": "unique route; imported page and colocated files copied into app/"
+    },
+    {
+      "project": "nicks",
+      "route": "/jobs/[id]",
+      "decision": "merged/skipped duplicate; Havillah route retained",
+      "reason": "conflicts with /jobs/[slug]"
+    },
+    {
+      "project": "nicks",
+      "route": "/jobs",
+      "decision": "source page skipped; source job data merged into the unified Havillah catalogue",
+      "reason": "duplicate route implementations deduplicated; unique listings from all sources are adapted in data/combined-jobs.ts"
+    },
+    {
+      "project": "nicks",
+      "route": "/training-school",
+      "decision": "integrated as native Havillah route",
+      "reason": "unique route; imported page and colocated files copied into app/"
+    },
+    {
+      "project": "nicks",
+      "route": "/training-school/courses/[slug]",
+      "decision": "integrated as native Havillah route",
+      "reason": "unique route; imported page and colocated files copied into app/"
+    },
+    {
+      "project": "nicks",
+      "route": "/training-school/courses",
+      "decision": "integrated as native Havillah route",
+      "reason": "unique route; imported page and colocated files copied into app/"
+    },
+    {
+      "project": "nicks",
+      "route": "/training-school/equipment",
+      "decision": "integrated as native Havillah route",
+      "reason": "unique route; imported page and colocated files copied into app/"
+    },
+    {
+      "project": "nicks",
+      "route": "/videos",
+      "decision": "integrated as native Havillah route",
+      "reason": "unique route; imported page and colocated files copied into app/"
+    },
+    {
+      "project": "nicks",
+      "route": "/services/[slug]",
+      "decision": "integrated as native Havillah route",
+      "reason": "unique route; imported page and colocated files copied into app/"
+    },
+    {
+      "project": "nicks",
+      "route": "/services",
+      "decision": "merged/skipped duplicate; Havillah route retained",
+      "reason": "conflicts with /services"
+    },
+    {
+      "project": "nicks",
+      "route": "/downloads",
+      "decision": "integrated as native Havillah route",
+      "reason": "unique route; imported page and colocated files copied into app/"
+    },
+    {
+      "project": "nicks",
+      "route": "/success-stories",
+      "decision": "merged/skipped duplicate; Havillah route retained",
+      "reason": "conflicts with /success-stories"
+    },
+    {
+      "project": "nicks",
+      "route": "/job-categories/[slug]",
+      "decision": "merged/skipped duplicate; Havillah route retained",
+      "reason": "conflicts with /job-categories/[slug]"
+    },
+    {
+      "project": "nicks",
+      "route": "/job-categories",
+      "decision": "integrated as native Havillah route",
+      "reason": "unique route; imported page and colocated files copied into app/"
+    },
+    {
+      "project": "nicks",
+      "route": "/blog",
+      "decision": "integrated as native Havillah route",
+      "reason": "unique route; imported page and colocated files copied into app/"
+    },
+    {
+      "project": "nicks",
+      "route": "/book-medical",
+      "decision": "integrated as native Havillah route",
+      "reason": "unique route; imported page and colocated files copied into app/"
+    },
+    {
+      "project": "nicks",
+      "route": "/terms-of-service",
+      "decision": "integrated as native Havillah route",
+      "reason": "unique route; imported page and colocated files copied into app/"
+    },
+    {
+      "project": "nicks",
+      "route": "/book-training",
+      "decision": "integrated as native Havillah route",
+      "reason": "unique route; imported page and colocated files copied into app/"
+    },
+    {
+      "project": "nicks",
+      "route": "/search",
+      "decision": "integrated as native Havillah route",
+      "reason": "unique route; imported page and colocated files copied into app/"
+    },
+    {
+      "project": "nicks",
+      "route": "/api/search",
+      "decision": "integrated as native Havillah route",
+      "reason": "unique route; imported page and colocated files copied into app/"
+    },
+    {
+      "project": "nicks",
+      "route": "/api/apply",
+      "decision": "merged/skipped duplicate; Havillah route retained",
+      "reason": "conflicts with /api/apply"
+    },
+    {
+      "project": "nicks",
+      "route": "/api/inbound",
+      "decision": "integrated as native Havillah route",
+      "reason": "unique route; imported page and colocated files copied into app/"
+    },
+    {
+      "project": "nicks",
+      "route": "/api/chatbot",
+      "decision": "integrated as native Havillah route",
+      "reason": "unique route; imported page and colocated files copied into app/"
+    },
+    {
+      "project": "nicks",
+      "route": "/apply-now",
+      "decision": "integrated as native Havillah route",
+      "reason": "unique route; imported page and colocated files copied into app/"
+    },
+    {
+      "project": "nicks",
+      "route": "/accessibility-statement",
+      "decision": "integrated as native Havillah route",
+      "reason": "unique route; imported page and colocated files copied into app/"
+    },
+    {
+      "project": "nicks",
+      "route": "/testimonials",
+      "decision": "integrated as native Havillah route",
+      "reason": "unique route; imported page and colocated files copied into app/"
+    },
+    {
+      "project": "nicks",
+      "route": "/cookie-policy",
+      "decision": "merged/skipped duplicate; Havillah route retained",
+      "reason": "conflicts with /cookie-policy"
+    },
+    {
+      "project": "nicks",
+      "route": "/events",
+      "decision": "integrated as native Havillah route",
+      "reason": "unique route; imported page and colocated files copied into app/"
+    },
+    {
+      "project": "nicks",
+      "route": "/privacy-policy",
+      "decision": "merged/skipped duplicate; Havillah route retained",
+      "reason": "conflicts with /privacy-policy"
+    },
+    {
+      "project": "nicks",
+      "route": "/gallery",
+      "decision": "merged/skipped duplicate; Havillah route retained",
+      "reason": "conflicts with /gallery"
+    },
+    {
+      "project": "nicks",
+      "route": "/news",
+      "decision": "integrated as native Havillah route",
+      "reason": "unique route; imported page and colocated files copied into app/"
+    },
+    {
+      "project": "nicks",
+      "route": "/contact",
+      "decision": "merged/skipped duplicate; Havillah route retained",
+      "reason": "conflicts with /contact"
+    },
+    {
+      "project": "nicks",
+      "route": "/medical-laboratory/[slug]",
+      "decision": "integrated as native Havillah route",
+      "reason": "unique route; imported page and colocated files copied into app/"
+    },
+    {
+      "project": "nicks",
+      "route": "/medical-laboratory",
+      "decision": "integrated as native Havillah route",
+      "reason": "unique route; imported page and colocated files copied into app/"
+    },
+    {
+      "project": "nicks",
+      "route": "/resources/[slug]",
+      "decision": "merged/skipped duplicate; Havillah route retained",
+      "reason": "conflicts with /resources/[slug]"
+    },
+    {
+      "project": "nicks",
+      "route": "/resources",
+      "decision": "merged/skipped duplicate; Havillah route retained",
+      "reason": "conflicts with /resources"
+    },
+    {
+      "project": "nicks",
+      "route": "/track-application",
+      "decision": "integrated as native Havillah route",
+      "reason": "unique route; imported page and colocated files copied into app/"
+    },
+    {
+      "project": "nicks",
+      "route": "/countries/[slug]",
+      "decision": "integrated as native Havillah route",
+      "reason": "unique route; imported page and colocated files copied into app/"
+    },
+    {
+      "project": "nicks",
+      "route": "/countries",
+      "decision": "integrated as native Havillah route",
+      "reason": "unique route; imported page and colocated files copied into app/"
+    },
+    {
+      "project": "nicks",
+      "route": "/about/[slug]",
+      "decision": "integrated as native Havillah route",
+      "reason": "unique route; imported page and colocated files copied into app/"
+    },
+    {
+      "project": "nicks",
+      "route": "/about",
+      "decision": "merged/skipped duplicate; Havillah route retained",
+      "reason": "conflicts with /about"
+    },
+    {
+      "project": "nicks",
+      "route": "/faqs",
+      "decision": "merged/skipped duplicate; Havillah route retained",
+      "reason": "conflicts with /faqs"
+    },
+    {
+      "project": "nicks",
+      "route": "/security",
+      "decision": "integrated as native Havillah route",
+      "reason": "unique route; imported page and colocated files copied into app/"
+    }
+  ],
+  "image_count": 139,
+  "image_manifest": "data/images.ts",
+  "no_reference_projects_folder": true,
+  "brand_rewrite": "Imported source projects now use Havillah brand/contact references where detected; original source logos excluded.",
+  "jfif_references_remaining": [],
+  "build_verified": false,
+  "build_verification_note": "npm install timed out because the environment could not fetch packages; offline cache misses @hookform/resolvers. Build not claimed successful.",
+  "source_archives": {
+    "ajira": {
+      "archive": "ajiramajuu-upgraded-final-v2.zip",
+      "files_audited": 202,
+      "route_entries": 37,
+      "integrated_route_entries": 25,
+      "duplicate_route_entries_skipped": 12
+    },
+    "mkconnections": {
+      "archive": "mkconnectionsapp-main-updated (1).zip",
+      "files_audited": 235,
+      "route_entries": 28,
+      "integrated_route_entries": 14,
+      "duplicate_route_entries_skipped": 14
+    },
+    "nicks": {
+      "archive": "nicksrecruitmentagency-updated.zip",
+      "files_audited": 189,
+      "route_entries": 45,
+      "integrated_route_entries": 30,
+      "duplicate_route_entries_skipped": 15
+    }
+  },
+  "integrated_feature_folders": {
+    "components/overseas": 18,
+    "components/career": 10,
+    "components/training": 7,
+    "lib/overseas": 17,
+    "lib/career": 9,
+    "lib/training": 5,
+    "data/overseas": 3,
+    "data/career": 2,
+    "data/training.ts": 1
+  },
+  "total_app_page_routes": 79,
+  "api_route_handlers": 12,
+  "source_images_imported": 138,
+  "image_catalogue_entries_including_og": 139,
+  "image_category_counts": {
+    "jobs": 34,
+    "countries": 40,
+    "gallery": 60,
+    "team": 4,
+    "hero": 1
+  },
+  "image_catalogue_missing_files": 0,
+  "static_import_audit_unresolved": [],
+  "static_image_audit_unresolved": [],
+  "jfif_references": [],
+  "reference_projects_directory_present": false,
+  "install_build_status": "npm install could not reach the registry and the cache was empty; npm run build and npm run dev fail with next: not found. Rerun after installing dependencies in a network-enabled environment.",
+  "open_graph_image": "/images/hero/havillah-social-share.png",
+  "mobile_navigation": "fixed bottom tab bar on mobile: Home, Jobs, Places, Gallery, Contact",
+  "combined_jobs_source": "data/combined-jobs.ts",
+  "canonical_company_source": "data/site-content.ts",
+  "final_folder_strategy": "Feature-oriented folders only: components/overseas, components/career, components/training; lib/overseas, lib/career, lib/training; data/overseas, data/career, data/training.ts. No source project roots are nested.",
+  "canonical_data_sources": [
+    "data/site-content.ts",
+    "data/combined-jobs.ts",
+    "data/job-categories.ts",
+    "data/destinations.ts",
+    "data/images.ts"
+  ],
+  "image_library_mb": 26.43,
+  "image_optimization": "Large PNG assets converted to WebP when smaller; all references audited after conversion."
+}
