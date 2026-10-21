@@ -1,6 +1,6 @@
-import { siteContent } from "@/data/site-content";
 "use client";
 
+import { siteContent } from "@/data/site-content";
 import Image from "next/image";
 import {
   ArrowUpRight,
@@ -30,7 +30,7 @@ const WHATSAPP_MESSAGE =
   "Hello Havillah Recruitment Agency, I would like to enquire about your overseas job opportunities. Please assist me.";
 
 const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
-  WHATSAPP_MESSAGE
+  WHATSAPP_MESSAGE,
 )}`;
 
 const FACEBOOK_URL = "";
@@ -89,7 +89,7 @@ export default function Footer() {
       ============================================================ */}
 
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
-        {/* large purple glow */}
+        {/* large green glow */}
         <div className="absolute -left-48 -top-48 h-[600px] w-[600px] rounded-full bg-[#219b4b]/20 blur-[120px]" />
 
         {/* warm glow */}
@@ -106,7 +106,7 @@ export default function Footer() {
 
         <div className="absolute left-[10%] top-[15%] h-20 w-20 rounded-full border border-white/[0.035]" />
 
-        <div className="absolute right-[8%] bottom-[15%] h-44 w-44 rounded-full border border-white/[0.035]" />
+        <div className="absolute bottom-[15%] right-[8%] h-44 w-44 rounded-full border border-white/[0.035]" />
       </div>
 
       {/* ============================================================
@@ -115,7 +115,6 @@ export default function Footer() {
 
       <div className="relative mx-auto max-w-7xl px-4 pt-16 sm:px-6 sm:pt-20 lg:px-8">
         <div className="relative overflow-hidden rounded-[2.5rem] border border-white/10 bg-white/[0.055] p-6 shadow-[0_35px_100px_rgba(0,0,0,0.18)] backdrop-blur-2xl sm:rounded-[3rem] sm:p-10 lg:p-12">
-          {/* inner glow */}
           <div className="pointer-events-none absolute -right-24 -top-24 h-72 w-72 rounded-full bg-[#219b4b]/15 blur-3xl" />
 
           <div className="relative grid gap-10 lg:grid-cols-[1fr_auto] lg:items-center">
@@ -215,7 +214,10 @@ export default function Footer() {
             {/* social row */}
             <div className="mt-7 flex items-center gap-3">
               {FACEBOOK_URL && (
-                <SocialButton href={FACEBOOK_URL} label="Havillah Recruitment Agency on Facebook">
+                <SocialButton
+                  href={FACEBOOK_URL}
+                  label="Havillah Recruitment Agency on Facebook"
+                >
                   <FaFacebookF size={18} />
                 </SocialButton>
               )}
@@ -360,7 +362,7 @@ export default function Footer() {
 
                 <span>
                   <span className="block text-[9px] uppercase tracking-[0.15em] text-white/30">
-                    Call us
+                    Phone
                   </span>
 
                   <span className="mt-1 block text-sm font-medium text-white/75 transition group-hover:text-white">
@@ -378,12 +380,12 @@ export default function Footer() {
                   <Mail size={17} />
                 </span>
 
-                <span className="min-w-0">
+                <span>
                   <span className="block text-[9px] uppercase tracking-[0.15em] text-white/30">
                     Email
                   </span>
 
-                  <span className="mt-1 block truncate text-sm font-medium text-white/75 transition group-hover:text-white">
+                  <span className="mt-1 block break-all text-sm font-medium text-white/75 transition group-hover:text-white">
                     {siteContent.email}
                   </span>
                 </span>
@@ -402,146 +404,64 @@ export default function Footer() {
 
                 <span>
                   <span className="block text-[9px] uppercase tracking-[0.15em] text-white/30">
-                    Visit us
+                    Location
                   </span>
 
-                  <span className="mt-1 block text-sm font-medium leading-5 text-white/75 transition group-hover:text-white">
+                  <span className="mt-1 block text-sm font-medium text-white/75 transition group-hover:text-white">
                     Nairobi, Kenya
-                    <br />
-                    Murang&apos;a Road, Nairobi
                   </span>
                 </span>
               </a>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      {/* ============================================================
-          MAP / LOCATION SECTION
-      ============================================================ */}
-
-      <div className="relative mx-auto max-w-7xl px-4 pb-12 sm:px-6 lg:px-8">
-        <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.045] p-2 shadow-[0_30px_80px_rgba(0,0,0,0.18)] backdrop-blur-xl sm:rounded-[2.5rem]">
-          <div className="grid overflow-hidden rounded-[1.5rem] bg-[#eee8e1] lg:grid-cols-[0.75fr_1.25fr] lg:rounded-[2rem]">
-            {/* map information */}
-            <div className="flex flex-col justify-center p-7 sm:p-10">
-              <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-[#e7f5eb] text-[#167e3b] shadow-[inset_3px_3px_8px_rgba(90,65,95,0.08),inset_-3px_-3px_8px_rgba(255,255,255,0.8)]">
-                <Navigation size={19} />
-              </div>
-
-              <div className="mt-6 text-[9px] font-semibold uppercase tracking-[0.24em] text-[#927a98]">
-                Find us in Nairobi
-              </div>
-
-              <h3 className="mt-3 font-display text-3xl font-medium tracking-[-0.035em] text-[#3f3045]">
-                Nairobi, Kenya
-              </h3>
-
-              <p className="mt-3 max-w-sm text-sm leading-6 text-[#766d76]">
-                Murang&apos;a Road, Nairobi, Kenya. Visit our recruitment team
-                for assistance with your overseas employment journey.
-              </p>
-
-              <a
-                href={MAPS_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group mt-6 inline-flex w-fit items-center gap-2 rounded-xl bg-[#082d50] px-5 py-3 text-xs font-semibold text-white shadow-[0_12px_30px_rgba(60,43,68,0.18)] transition hover:-translate-y-0.5 hover:bg-[#0c4169]"
-              >
-                Open in Google Maps
-
-                <ArrowUpRight
-                  size={14}
-                  className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+              <div className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.04] px-5 py-4 backdrop-blur-xl">
+                <ShieldCheck
+                  size={18}
+                  className="shrink-0 text-[#58c45b]"
                 />
-              </a>
-            </div>
 
-            {/* actual map */}
-            <div className="relative min-h-[320px] overflow-hidden lg:min-h-[360px]">
-              <iframe
-                src="https://www.google.com/maps?q=Nairobi%2C+Kenya&output=embed"
-                width="100%"
-                height="100%"
-                style={{
-                  border: 0,
-                  minHeight: "360px",
-                }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="strict-origin-when-cross-origin"
-                title="Havillah Recruitment Agency location - Nairobi, Kenya"
-              />
+                <div>
+                  <div className="text-xs font-semibold text-white/80">
+                    Candidate-first recruitment
+                  </div>
 
-              {/* map glass label */}
-              <div className="pointer-events-none absolute left-4 top-4 rounded-xl border border-white/40 bg-white/75 px-4 py-3 shadow-lg backdrop-blur-xl">
-                <div className="flex items-center gap-2">
-                  <span className="h-2 w-2 animate-pulse rounded-full bg-[#167e3b]" />
-
-                  <span className="text-[9px] font-semibold uppercase tracking-[0.15em] text-[#082d50]">
-                    Havillah Recruitment Agency
-                  </span>
+                  <div className="mt-0.5 text-[10px] text-white/35">
+                    Guidance through the process
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      {/* ============================================================
-          TRUST STRIP
-      ============================================================ */}
+              <div className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.04] px-5 py-4 backdrop-blur-xl">
+                <MessageCircle
+                  size={18}
+                  className="shrink-0 text-[#58c45b]"
+                />
 
-      <div className="relative mx-auto max-w-7xl px-4 pb-10 sm:px-6 lg:px-8">
-        <div className="grid gap-3 sm:grid-cols-3">
-          <div className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.04] px-5 py-4 backdrop-blur-xl">
-            <ShieldCheck
-              size={18}
-              className="shrink-0 text-[#58c45b]"
-            />
+                <div>
+                  <div className="text-xs font-semibold text-white/80">
+                    WhatsApp enquiries
+                  </div>
 
-            <div>
-              <div className="text-xs font-semibold text-white/80">
-                Candidate support
+                  <div className="mt-0.5 text-[10px] text-white/35">
+                    Fast direct communication
+                  </div>
+                </div>
               </div>
 
-              <div className="mt-0.5 text-[10px] text-white/35">
-                Guidance through the process
-              </div>
-            </div>
-          </div>
+              <div className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.04] px-5 py-4 backdrop-blur-xl">
+                <Navigation
+                  size={18}
+                  className="shrink-0 text-[#58c45b]"
+                />
 
-          <div className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.04] px-5 py-4 backdrop-blur-xl">
-            <MessageCircle
-              size={18}
-              className="shrink-0 text-[#58c45b]"
-            />
+                <div>
+                  <div className="text-xs font-semibold text-white/80">
+                    Nairobi, Kenya
+                  </div>
 
-            <div>
-              <div className="text-xs font-semibold text-white/80">
-                WhatsApp enquiries
-              </div>
-
-              <div className="mt-0.5 text-[10px] text-white/35">
-                Fast direct communication
-              </div>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.04] px-5 py-4 backdrop-blur-xl">
-            <MapPin
-              size={18}
-              className="shrink-0 text-[#58c45b]"
-            />
-
-            <div>
-              <div className="text-xs font-semibold text-white/80">
-                Nairobi, Kenya
-              </div>
-
-              <div className="mt-0.5 text-[10px] text-white/35">
-                Nairobi, Kenya · Murang&apos;a Road
+                  <div className="mt-0.5 text-[10px] text-white/35">
+                    Nairobi, Kenya · Murang'a Road
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -591,7 +511,7 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Floating WhatsApp now lives in components/chat/ChatWidget.tsx (contextual, safe-area aware, sits above the mobile tab bar). */}
+      {/* Floating WhatsApp now lives in components/chat/ChatWidget.tsx */}
     </footer>
   );
 }
